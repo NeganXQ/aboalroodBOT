@@ -557,7 +557,7 @@ me.send("تم رفض طلب الكلان الخاص بك")
 
 client.on("messageDelete", async (message) => {
 
-    const Dchannel = message.guild.channels.cache.get("987055731293429790")
+    const Dchannel = message.guild.channels.cache.get("1022188681580261377")
 
     message.attachments.forEach(attachment => {
       const ImageLink = attachment.proxyURL;
