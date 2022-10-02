@@ -459,7 +459,8 @@ if(!message) return interaction.reply({content: ":x: لا يمكنني ايجا�
   } catch {
     return interaction.reply({content: ":x:لا يمكنني تعديل الرسالة يرجى التأكد نت صلاحياتي و ابلاغ الادارة بذلك", ephemeral: true})
   }
-  
+await mdb.deleteOne({ MemberId: interaction.member.id})
+        
 return  interaction.reply({content: "تم الغاء طلب تقديمك", ephemeral: true}) 
 
 
